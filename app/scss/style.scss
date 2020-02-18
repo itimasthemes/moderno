@@ -3,7 +3,7 @@
 @import '_fonts';
 
 
-
+// ------------ Header ------------- //
 
 .header__top-inner {
     display: flex;
@@ -64,7 +64,9 @@
     }
 }
 
-// ------------ Search -------------
+// ------------ Header End ------------- //
+
+// ------------ Search ------------- //
 .search {
     
     background-repeat: no-repeat;
@@ -121,4 +123,107 @@
     margin-bottom: 50px;
 }
 
+// ------------ Search End ------------- //
 
+// ------------ Products ------------- //
+
+.products {
+    padding: 100px 0;
+    background-color: $lightgray
+}
+
+.products__inner-btn {
+    text-align: center;
+    margin-bottom: 60px;
+    height: 38px;
+    button{
+        padding: 12px 20px;
+        border: none;
+        background-color: #fff;
+        color: $black;
+        cursor: pointer
+    }
+}
+
+.products__inner-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product__item{
+    max-width: 442px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    margin-bottom: 25px;
+    &-img {
+        min-height: 250px;
+        background-repeat: no-repeat;
+        display: block;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        border-bottom: 1px solid #e7ecf2;
+    }
+    &-name {
+        max-width: 310px;
+    }
+    &-title {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        color: $black;
+        display: block;
+        margin-bottom: 10px;
+    }
+    &-category {
+        display: block;
+        color: $green;
+    }
+    &-price {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        color: $black;
+    }
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px;
+        align-items: center;
+    }
+    &-author{
+        display: flex;
+        align-items: center;
+        .avatar{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-position: center;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 15px;
+        }
+        span {
+            font-size: 14px;
+            font-weight: 500;  
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+// ------------ Products End------------- //
